@@ -313,7 +313,12 @@ sudo apt update && sudo apt install libpcap-dev -y
 
 install:  
 ```
+go install -v github.com/projectdiscovery/naabu/v2/cmd/naabu@latest  
+```
 
+check if it works  
+```
+naabu -h
 ```  
 
 ## katana  
