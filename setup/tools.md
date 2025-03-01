@@ -103,7 +103,7 @@ Check if it works again (get your proxychains4 ip):
 ```
 ip=$(proxychains4 curl -s https://api.ipify.org); echo "proxychains4 ip: $ip";
 ```
-- Check the ip returned with another tool like [https://whatismyipaddress.com/ip-lookup](https://whatismyipaddress.com/ip-lookup)  
+- Check the ip returned with another tool like [https://www.iplocation.net/ip-lookup](https://www.iplocation.net/ip-lookup)  
 - Try to reboot if it doesn't seem to work.  
 
 ## golang  
