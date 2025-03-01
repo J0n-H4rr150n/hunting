@@ -40,7 +40,7 @@ echo 'export PATH=$PATH:/home/bug/go/bin' >> ~/.bashrc
 
 # TomNomNom Tools  
 
-anew  
+## anew  
 [https://github.com/tomnomnom/anew](https://github.com/tomnomnom/anew)  
 
 install  
@@ -51,6 +51,58 @@ go install -v github.com/tomnomnom/anew@latest
 check if it works:  
 ```
 anew -h
+```
+
+## waybackurls  
+[https://github.com/tomnomnom/waybackurls](https://github.com/tomnomnom/waybackurls)  
+
+install  
+```
+go install github.com/tomnomnom/waybackurls@latest
+```
+
+check if it works:  
+```
+waybackurls -h
+```  
+
+## assetfinder  
+[https://github.com/tomnomnom/assetfinder](https://github.com/tomnomnom/assetfinder)    
+
+install
+```
+go install github.com/tomnomnom/assetfinder@latest
+```
+
+check if it works:  
+```
+assetfinder -h
+```  
+
+## httprobe  
+[https://github.com/tomnomnom/httprobe](https://github.com/tomnomnom/httprobe)  
+
+install  
+```
+go install github.com/tomnomnom/httprobe@latest
+```
+
+check if it works:  
+```
+httprobe -h
+```  
+
+## gron  
+[https://github.com/tomnomnom/gron](https://github.com/tomnomnom/gron)  
+
+install  
+```
+go install github.com/tomnomnom/gron@latest
+```
+
+check if it works:  
+```
+gron -h
 ```  
 
 # ProjectDiscovery Tools  
