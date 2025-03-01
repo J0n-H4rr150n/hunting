@@ -32,5 +32,29 @@ check if go works:
 go version
 ```
 
+add the golang tool install location to path:  
+```
+echo 'export PATH=$PATH:/home/bug/go/bin' >> ~/.bashrc
+```  
 
-# ProjectDiscovery Tools
+# TomNomNom Tools  
+
+anew  
+[https://github.com/tomnomnom/anew](https://github.com/tomnomnom/anew)  
+
+install  
+```
+go install -v github.com/tomnomnom/anew@latest
+```
+
+
+
+
+
+# ProjectDiscovery Tools  
+
+
+
+
+
+
