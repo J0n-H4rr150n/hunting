@@ -14,6 +14,40 @@ check if it works:
 locate -h
 ```  
 
+## node  
+[https://github.com/nvm-sh/nvm?tab=readme-ov-file#installing-and-updating](https://github.com/nvm-sh/nvm?tab=readme-ov-file#installing-and-updating)    
+
+WARNING: The command below will automatically run the `install.sh` file (check it first if you want).
+```
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.1/install.sh | bash
+```
+
+refresh:  
+```
+source ~/.bashrc
+```
+
+see available node versions:  
+```
+nvm list-remote
+```  
+
+install a version of node:  
+```
+nvm install lts/jod
+```  
+- At the time of this writing `lts/jod` was for `node v22.14.0 (npm v10.9.2)`.  
+
+check node version:  
+```
+node --version
+```
+
+check npm version:  
+```
+npm --version
+```  
+
 ## nmap  
 
 install:  
@@ -263,8 +297,31 @@ check if it works:
 katana -h
 ```  
 
+### troubleshooting  
 
+Might need a different version of go...  
 
+go version manager (gvm):  
+[https://github.com/moovweb/gvm](https://github.com/moovweb/gvm)  
 
+prereq:  
+```
+sudo apt update && sudo apt install binutils gcc make bison -y
+```  
 
+install:  
+```
+bash < <(curl -s -S -L https://raw.githubusercontent.com/moovweb/gvm/master/binscripts/gvm-installer)
+```  
 
+katana mentioned needing go1.18+ (but `go1.24.0` might have breaking changes):  
+```
+gvm install go1.18
+```
+
+use `go1.18`:  
+```
+gvm use go1.18
+```  
+
+try to install katana again...  
