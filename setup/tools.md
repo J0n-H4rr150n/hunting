@@ -322,6 +322,11 @@ gvm install go1.18
 use `go1.18`:  
 ```
 gvm use go1.18
+```
+
+check the go version:  
+```
+go version
 ```  
 
 try to install katana again...  
