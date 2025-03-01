@@ -35,7 +35,8 @@ go version
 add the golang tool install location to path:  
 ```
 echo 'export PATH=$PATH:/home/bug/go/bin' >> ~/.bashrc
-```  
+```
+- If the above doesn't work create the directory or wait until after installing a golang tool.
 
 # TomNomNom Tools  
 
@@ -45,11 +46,12 @@ anew
 install  
 ```
 go install -v github.com/tomnomnom/anew@latest
+```  
+
+check if it works:  
 ```
-
-
-
-
+anew -h
+```  
 
 # ProjectDiscovery Tools  
 
