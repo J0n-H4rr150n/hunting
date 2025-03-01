@@ -69,7 +69,13 @@ Setup tor exit node to United States:
 ```
 sudo nano /etc/tor/torrc
 ```  
-- Add the following at the bottom of the file `ExitNodes {us} StrictNodes 1`
+- Add the following at the bottom of the file:
+```
+ExitNodes {us}
+StrictNodes 1
+GeoIPExcludeUnknown 1
+AllowSingleHopCircuits 0
+```  
 
 restart the tor service:  
 ```
