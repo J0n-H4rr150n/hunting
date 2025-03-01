@@ -5,7 +5,7 @@ Setup a folder similar to kali:
 sudo mkdir /usr/share/wordlists
 ```  
 
-# SecLists  
+## SecLists  
 
 git the data:  
 ```
@@ -32,7 +32,7 @@ check the `rockyou.txt` file extracted from above:
 cat rockyou.txt | wc -l
 ```  
 
-# Assetnote Wordlists  
+## Assetnote Wordlists  
 
 Select the wordlists you want from:  
 [https://wordlists.assetnote.io/](https://wordlists.assetnote.io/)  
