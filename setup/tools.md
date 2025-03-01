@@ -272,6 +272,24 @@ check if it works:
 subfinder -h
 ```
 
+## nuclei  
+[https://github.com/projectdiscovery/nuclei](https://github.com/projectdiscovery/nuclei)  
+
+install:  
+```
+go install -v github.com/projectdiscovery/nuclei/v3/cmd/nuclei@latest
+```
+
+check if it works:  
+```
+nuclei -h
+```
+
+to get the initial templates installed run:  
+```
+nuclei
+```  
+
 ## katana  
 [https://github.com/projectdiscovery/katana](https://github.com/projectdiscovery/katana)  
 
