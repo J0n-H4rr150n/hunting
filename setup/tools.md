@@ -2,6 +2,18 @@
 
 # Basic Tools  
 
+## locate  
+
+install:  
+```
+sudo apt install plocate
+```
+
+check if it works:  
+```
+locate -h
+```  
+
 ## nmap  
 
 install:  
