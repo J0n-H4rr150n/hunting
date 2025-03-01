@@ -301,6 +301,11 @@ katana -h
 
 Might need a different version of go...  
 
+make all of these items are installed:  
+```
+sudo apt-get install curl git mercurial make binutils bison gcc build-essential
+```
+
 go version manager (gvm):  
 [https://github.com/moovweb/gvm](https://github.com/moovweb/gvm)  
 
@@ -316,13 +321,13 @@ bash < <(curl -s -S -L https://raw.githubusercontent.com/moovweb/gvm/master/bins
 
 katana mentioned needing go1.18+ (but `go1.24.0` might have breaking changes):  
 ```
-gvm install go1.18
+gvm install go1.22.12
 ```
 
-use `go1.18`:  
+use `go1.22`:  
 ```
-gvm use go1.18
-```
+gvm use go1.22.12
+```  
 
 check the go version:  
 ```
@@ -330,3 +335,26 @@ go version
 ```  
 
 try to install katana again...  
+```
+go install github.com/projectdiscovery/katana/cmd/katana@latest
+```  
+
+check if it works:  
+```
+katana -h
+```
+
+# BishopFox Tools  
+
+## jsluice  
+[https://github.com/BishopFox/jsluice](https://github.com/BishopFox/jsluice)  
+
+install  
+```
+go install github.com/BishopFox/jsluice/cmd/jsluice@latest
+```
+
+check if it works:  
+```
+jsluice -h
+```
