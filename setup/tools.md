@@ -1,6 +1,13 @@
-# init  
+# installing tools on ubuntu  
 
 # Basic Tools  
+
+## nmap  
+
+install:  
+```
+sudo apt update && sudo apt install nmap -y
+```  
 
 ## golang  
 
@@ -106,6 +113,19 @@ gron -h
 ```  
 
 # ProjectDiscovery Tools  
+
+## httpx  
+[https://github.com/projectdiscovery/httpx](https://github.com/projectdiscovery/httpx)  
+
+install
+```
+go install -v github.com/projectdiscovery/httpx/cmd/httpx@latest
+```
+
+check if it works:  
+```
+httpx -h
+```
 
 
 
