@@ -177,6 +177,19 @@ echo 'export PATH=$PATH:/home/bug/go/bin' >> ~/.bashrc
 - Note change `bug` above to whatever username you are using.
 - If the above doesn't work create the directory or wait until after installing a golang tool.
 
+## whois  
+
+install  
+```
+sudo apt update && sudo apt install whois
+```  
+
+check if it works:  
+```
+whois --help
+```  
+
+
 # TomNomNom Tools  
 
 ## anew  
@@ -288,6 +301,19 @@ nuclei -h
 to get the initial templates installed run:  
 ```
 nuclei
+```  
+
+## naabu  
+[https://github.com/projectdiscovery/naabu](https://github.com/projectdiscovery/naabu)  
+
+prereq:  
+```
+sudo apt update && sudo apt install libpcap-dev -y
+```  
+
+install:  
+```
+
 ```  
 
 ## katana  
