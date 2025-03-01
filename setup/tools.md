@@ -225,6 +225,44 @@ check if it works:
 httpx -h
 ```
 
+## subfinder  
+[https://github.com/projectdiscovery/subfinder](https://github.com/projectdiscovery/subfinder)  
+
+install  
+```
+go install -v github.com/projectdiscovery/subfinder/v2/cmd/subfinder@latest
+```
+
+check if it works:  
+```
+subfinder -h
+```
+
+## katana  
+[https://github.com/projectdiscovery/katana](https://github.com/projectdiscovery/katana)  
+
+prereq:  
+```
+sudo apt update
+sudo snap refresh
+sudo apt install zip curl wget git
+sudo snap install golang --classic
+wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add - 
+sudo sh -c 'echo "deb http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google.list'
+sudo apt update 
+sudo apt install google-chrome-stable
+```  
+
+install  
+```
+go install github.com/projectdiscovery/katana/cmd/katana@latest
+```  
+
+check if it works:  
+```
+katana -h
+```  
+
 
 
 
