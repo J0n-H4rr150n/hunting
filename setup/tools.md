@@ -140,6 +140,7 @@ add the golang tool install location to path:
 ```
 echo 'export PATH=$PATH:/home/bug/go/bin' >> ~/.bashrc
 ```
+- Note change `bug` above to whatever username you are using.
 - If the above doesn't work create the directory or wait until after installing a golang tool.
 
 # TomNomNom Tools  
