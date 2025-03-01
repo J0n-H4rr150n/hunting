@@ -9,6 +9,85 @@ install:
 sudo apt update && sudo apt install nmap -y
 ```  
 
+check if it works:  
+```
+nmap -h
+```
+
+## proxychains4  
+
+install:  
+```
+sudo apt update && sudo apt install proxychains4 -y
+```
+
+check if it works:  
+```
+proxychains4 --help
+```  
+
+add tor support (install tor):  
+```
+sudo apt update && sudo apt install tor -y
+```  
+
+enable tor:  
+```
+sudo systemctl start tor
+```  
+
+check if tor is active:  
+```
+sudo systemctl status tor
+```  
+
+update the proxychains4 config file:  
+```
+sudo nano /etc/proxychains4.conf
+```
+- enable `dynamic_chain` (remove the comment `#`)  
+- disable `strict_chain` (add a command '#' in front of it)  
+- enable `random_chain`  (remove the comment `#`)
+- enable `proxy_dns` (remove the comment `#`)  
+
+Go to the very last empty row in the file and add:  
+```
+socks5  127.0.0.1 9050
+```  
+
+Check if it works (get your normal ip first):  
+```
+ip=$(curl -s https://api.ipify.org); echo "Normal ip: $ip";
+```  
+
+Check if it works (get your proxychains4 ip):  
+```
+ip=$(proxychains4 curl -s https://api.ipify.org); echo "proxychains4 ip: $ip";
+```  
+
+Setup tor exit node to United States:  
+```
+sudo nano /etc/tor/torrc
+```  
+- Add the following at the bottom of the file `ExitNodes {us} StrictNodes 1`
+
+restart the tor service:  
+```
+sudo systemctl restart tor
+```  
+
+check if tor is enabled:  
+```
+sudo systemctl status tor
+```  
+
+Check if it works again (get your proxychains4 ip):  
+```
+ip=$(proxychains4 curl -s https://api.ipify.org); echo "proxychains4 ip: $ip";
+```
+- Check the ip returned with another tool like [https://whatismyipaddress.com/ip-lookup](https://whatismyipaddress.com/ip-lookup)  
+- Try to reboot if it doesn't seem to work.  
+
 ## golang  
 
 Download go for linux:  
