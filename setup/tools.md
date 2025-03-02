@@ -189,6 +189,18 @@ check if it works:
 whois --help
 ```  
 
+## tmux
+
+install  
+```
+sudo apt update && sudo apt install tmux
+```
+
+check if it works:  
+```
+tmux
+```  
+
 
 # TomNomNom Tools  
 
