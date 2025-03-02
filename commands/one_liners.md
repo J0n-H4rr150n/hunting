@@ -24,4 +24,4 @@ try to detect if the hostname is behind a `waf`:
 ```
 xargs -I {} sh -c 'wafw00f -a {} | anew assetfinder_domains_alive_waf.txt' < assetfinder_domains_alive.txt
 ```  
-- Make sure to have the necessary tools installed - [https://github.com/J0n-H4rr150n/hunting/blob/main/setup/tools.md](https://github.com/J0n-H4rr150n/hunting/blob/main/setup/tools.md)  
+- Make sure to have the necessary tools installed - [https://github.com/J0n-H4rr150n/hunting/tree/main/tools](https://github.com/J0n-H4rr150n/hunting/tree/main/tools)  
