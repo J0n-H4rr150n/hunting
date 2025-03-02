@@ -62,7 +62,7 @@ test</title><img/src=x onerror=alert(19628397001)>
 ```  
 
 #### style tag in head section  
-value (`19628397001`) inside a style:  
+expected value format `#FFFFFF`, but example below input value (`19628397001`):  
 ```HTML
 <head>
         <style>
