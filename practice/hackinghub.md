@@ -92,3 +92,11 @@ try to break out with a payload like...
 ```
 ';alert(19628397001);//
 ```
+
+### content types  
+
+See a server response header with `Content-Type: text/html`, but the content returned is `json` (i.e. an API response)?  
+
+Go to that endpoint in your web browser directly and test for XSS there.  
+
+
