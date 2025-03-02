@@ -4,6 +4,7 @@
 [https://app.hackinghub.io/hubs/nbbc-xss](https://app.hackinghub.io/hubs/nbbc-xss)    
 
 ### Example XSS Payloads  
+- NOTE: The number `19628397001` is just a random number that can be used as a [canary](https://portswigger.net/burp/documentation/desktop/tools/dom-invader/settings/canary) to search proxy history for the value.  
 
 ```
 <script>alert(19628397001)</script>
