@@ -112,7 +112,13 @@ ip=$(proxychains4 curl -s https://api.ipify.org); echo "proxychains4 ip: $ip";
 ```  
 ```
 ip=$(proxychains4 curl -s https://ipleak.net/json/); echo "proxychains4 ip: $ip";
+```
+
+check if it works with a custom list of proxies:  
+```
+ip=$(proxychains4 -f list_proxychains4.conf curl -s https://ipleak.net/json/); echo "proxychains4 ip: $ip";
 ```  
+- Additional information at [https://github.com/J0n-H4rr150n/hunting/blob/main/setup/proxies.md](https://github.com/J0n-H4rr150n/hunting/blob/main/setup/proxies.md)  
 
 Setup tor exit node to United States:  
 ```
