@@ -110,6 +110,9 @@ Check if it works (get your proxychains4 ip):
 ```
 ip=$(proxychains4 curl -s https://api.ipify.org); echo "proxychains4 ip: $ip";
 ```  
+```
+ip=$(proxychains4 curl -s https://ipleak.net/json/); echo "proxychains4 ip: $ip";
+```  
 
 Setup tor exit node to United States:  
 ```
