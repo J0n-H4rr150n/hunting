@@ -88,7 +88,7 @@ $('span#name').html( name );
 </script>
 ```
 
-try to break out with a layload like...  
+try to break out with a payload like...  
 ```
 ';alert(19628397001);//
 ```
