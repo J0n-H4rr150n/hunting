@@ -26,6 +26,7 @@ run without checking certs and save to the cloud
 ```
 mitmproxy --ssl-insecure -s save_to_cloud.py
 ```  
+- Example script at: [https://github.com/J0n-H4rr150n/hunting/blob/main/scripts/mitmproxy_addons/save_to_cloud.py](https://github.com/J0n-H4rr150n/hunting/blob/main/scripts/mitmproxy_addons/save_to_cloud.py)  
 
 ## Links  
 
