@@ -21,7 +21,7 @@ prefix (start of commands) -> `CTRL+b`
 
 `Ctrl+b` + `%` - split window horizontally  
 `Ctrl+b` + `"` - split window vertically  
-`Ctrl+b` + arrow key (left right, up, date) - move around between the window panes  
+`Ctrl+b` + arrow key (left right, up, down) - move around between the window panes  
 `Ctrl+b` + `x` - close the current pane
 
 `Ctrl+b` + `c` - create a new window  
