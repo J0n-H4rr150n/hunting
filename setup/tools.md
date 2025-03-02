@@ -330,6 +330,14 @@ check if it works
 naabu -h
 ```  
 
+## notify  
+[https://github.com/projectdiscovery/notify](https://github.com/projectdiscovery/notify)  
+
+install:  
+```
+go install -v github.com/projectdiscovery/notify/cmd/notify@latest
+```  
+
 ## katana  
 [https://github.com/projectdiscovery/katana](https://github.com/projectdiscovery/katana)  
 
