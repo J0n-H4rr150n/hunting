@@ -77,3 +77,18 @@ try to break out with a payload like...
 ```
 #FFFFFF;}</style><script>alert(19628397001)</script><!--
 ```
+
+#### javascript variables  
+
+value `19628397001` instead a javascript variable:  
+```
+<script>
+var name = '19628397001';
+$('span#name').html( name );
+</script>
+```
+
+try to break out with a layload like...  
+```
+';alert(19628397001);//
+```
