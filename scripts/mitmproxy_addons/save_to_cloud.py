@@ -84,7 +84,7 @@ class PostgresFlowSaver:
                 database=self.db_name,
                 user=self.db_user,
                 password=self.db_password,
-                sslmode='require'  # Enforce SSL for DigitalOcean Managed DB
+                sslmode='require'  # Enforce SSL
             )
             cursor = conn.cursor(cursor_factory=psycopg2.extras.DictCursor)
 
