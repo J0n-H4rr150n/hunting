@@ -99,4 +99,9 @@ See a server response header with `Content-Type: text/html`, but the content ret
 
 Go to that endpoint in your web browser directly and test for XSS there.  
 
+Look at what is rendering and maybe try something like... 
+```
+testing"><a href=javascript:alert(19628397001)>testing
+```
+
 
