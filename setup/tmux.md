@@ -37,3 +37,6 @@ view the session from the list:
 ```
 tmux attach -t 0
 ```
+
+to cancel:  
+`CTRL+C`  
