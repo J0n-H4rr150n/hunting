@@ -64,11 +64,13 @@ test</title><img/src=x onerror=alert(19628397001)>
 #### style tag in head section  
 value (`19628397001`) inside a style:  
 ```HTML
-<style>
-        body {
-            background-color: 19628397001;
-        }
-    </style>
+<head>
+        <style>
+                body {
+                        background-color: 19628397001;
+                }
+        </style>
+</head>
 ```  
 
 try to break out with a payload like...  
