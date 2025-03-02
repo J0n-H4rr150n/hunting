@@ -3,6 +3,8 @@
 ## free proxies  
 [https://geonode.com/free-proxy-list](https://geonode.com/free-proxy-list)  
 
+[https://www.geeksforgeeks.org/best-free-proxy-servers-list/](https://www.geeksforgeeks.org/best-free-proxy-servers-list/)  
+
 ### custom scripts to check and use the proxies  
 
 basic check to see if the proxies are `alive`  
