@@ -38,7 +38,15 @@ Ctrl+B W — Open a panel to navigate across windows in multiple sessions.
 
 ## example  
 
-Start a long-running process then you can detach from it to keep it running.
+Start a new tmux session with a name:  
+```
+tmux new -s hunting
+```  
+
+Start a long-running process then you can detach from it to keep it running.  
+```
+i=0; while true; do echo "Test process $i"; let i=i+1; sleep 10; done
+```  
 
 prefix command:  
 `Ctrl+b`  
