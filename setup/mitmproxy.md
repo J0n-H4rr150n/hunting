@@ -22,6 +22,11 @@ check if it works:
 mitmproxy
 ```  
 
+run without checking certs and save to the cloud  
+```
+mitmproxy --ssl-insecure -s save_to_cloud.py
+```  
+
 ## Links  
 
 User Interface (cli) docs:  
