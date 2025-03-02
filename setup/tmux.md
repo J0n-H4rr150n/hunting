@@ -66,9 +66,9 @@ To get back to the long-running process...
 tmux ls
 ```
 
-view the session from the list:  
+view the session from the list by attaching to it by name or number:  
 ```
-tmux attach -t 0
+tmux attach -t hunting
 ```
 
 to cancel:  
