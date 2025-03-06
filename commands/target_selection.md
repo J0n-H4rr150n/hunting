@@ -20,3 +20,13 @@ Use curl to get_in_scope URL targets from the raw file hosted on githubuserconte
 
 get in_scope URLS where targets start with "*":  
 `cat hackerone_data.json | jq -r '.[] | .targets.in_scope[] | select(.eligible_for_bounty == true and .asset_type == "URL" and (.asset_identifier | startswith("*"))) | .asset_identifier' | sort -u | anew hackerone_targets_wildcard.txt`  
+
+## Bugcrowd Platform  
+
+json data:  
+[https://raw.githubusercontent.com/arkadiyt/bounty-targets-data/refs/heads/main/data/bugcrowd_data.json](https://raw.githubusercontent.com/arkadiyt/bounty-targets-data/refs/heads/main/data/bugcrowd_data.json)  
+
+## In Scope URLs  
+
+get in_scope URL targets:
+`cat bugcrowd_data.json | jq -r '.[].targets.in_scope[] | select(.type == "website" or .type == "api" or .type == "other") | select(.target | contains("https")) | .target' | sort -u | anew bugcrowd_targets.txt`  
